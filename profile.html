@@ -12,7 +12,9 @@
   <!-- Font Awesome -->
   <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
   <!-- Theme style -->
-  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+  <link rel="stylesheet" href="dist/css/adminlte.css">
+
+  <!-- <link rel="stylesheet" href="style.css"> -->
 </head>
 <body class="hold-transition sidebar-mini">
 <div class="wrapper">
@@ -23,15 +25,8 @@
       <li class="nav-item">
         <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
       </li>
-      <li class="nav-item d-none d-sm-inline-block">
-        <a href="index.html" class="nav-link">Home</a>
-      </li>
-      <li class="nav-item d-none d-sm-inline-block">
-        <a href="#" class="nav-link">Contact</a>
-      </li>
-      <li class="nav-item d-none d-sm-inline-block">
-        <a href="login-v2.html" class="nav-link">Log Out</a>
-      </li>
+     
+     
     </ul>
 
   
@@ -64,7 +59,15 @@
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
-          <li class="nav-item menu-open">
+               <li class="nav-item">
+                <a href="index.html" class="nav-link">
+                  <i class="nav-icon fas fa-search"></i>
+                  <p>
+                    Cari Lowongan
+                  </p>
+                </a>
+              </li>
+               <li class="nav-item menu-open">
             <a href="#" class="nav-link active">
               <i class="nav-icon fas fa-pen"></i>
               <p>
@@ -94,11 +97,18 @@
             </ul>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a href="dashboard-mahasiswa-logbook.html" class="nav-link">
               <i class="nav-icon fas fa-book-open"></i>
               <p>
                 Log Book
-              
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="login-v2.html" class="nav-link">
+              <i class="nav-icon fas fa-power-off"></i>
+              <p>
+                Log Out
               </p>
             </a>
           </li>
@@ -146,10 +156,10 @@
                 <h3 class="profile-username text-center">Bramantya Raka</h3>
 
                 <p class="text-muted text-center">Software Engineer</p>
-                <strong><i class="fas fa-book mr-1"></i> Education</strong>
+                <strong><i class="fas fa-book mr-1"></i> Pendidikan</strong>
 
                 <p class="text-muted">
-                  Diploma at gadjah Mada University
+                  Diploma 
                 </p>
 
                 <hr>
@@ -160,7 +170,7 @@
 
                 <hr>
 
-                <strong><i class="fas fa-pencil-alt mr-1"></i> Skills</strong>
+                <strong><i class="fas fa-pencil-alt mr-1"></i> Kemampuan</strong>
 
                 <p class="text-muted">
                   <span class="tag tag-danger">UI Design</span>
@@ -172,14 +182,14 @@
 
                 <hr>
 
-                <strong><i class="far fa-file-alt mr-1"></i> Experience</strong>
+                <strong><i class="far fa-file-alt mr-1"></i> Pengalaman</strong>
 
                 <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fermentum enim neque.</p>
               </div>
               <div class="form-group row">
                 <div class="offset-sm-5 ">
                 <a href="profile-settings.html">
-                  <button type="#" class="btn btn-danger">Setting</button>
+                  <button type="#" class="btn btn-danger">Ubah</button>
                 </a> 
                 </div>
               </div>
