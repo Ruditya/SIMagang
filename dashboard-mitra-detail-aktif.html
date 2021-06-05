@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Dasboard Dosen Pembimbing</title>
-  <link href="assets/img/sim-green-hat.png" rel="icon">
+  <link href="assets/img/sim-vertical-white.png" rel="icon">
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -21,8 +21,13 @@
     <ul class="navbar-nav">
       <li class="nav-item">
         <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
-      </li> 
+      </li>
+      
+      
     </ul>
+
+  
+
   </nav>
   <!-- /.navbar -->
 
@@ -39,10 +44,10 @@
       <!-- Sidebar user panel (optional) -->
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">
         <div class="image">
-          <img src="assets/img/logo-ugm.jpg" class="img-circle elevation-2" alt="User Image">
+          <img src="assets/img/sim-vertical-orange.png" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
-          <a href="profile-departemen.html" class="d-block">Departemen Teknik Elektro Dan Informatika</a>
+          <a href="profile.html" class="d-block">PT SIMAGANG</a>
         </div>
       </div>
 
@@ -52,23 +57,43 @@
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
           <li class="nav-item menu-open">
-           
+            <a href="#" class="nav-link ">
+              <i class="nav-icon fas fa-pen"></i>
+              <p>
+                Kelola Lowongan
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="dashboard-departemen-daftar.html" class="nav-link">
+                <a href="dashboard-mitra-lowongan.html" class="nav-link ">
                   <i class="far fa-copy nav-icon"></i>
-                  <p>Daftar Mahasiswa</p>
+                  <p>Lowongan</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="login-v2.html" class="nav-link">
-                  <i class="nav-icon fas fa-power-off"></i>
-                  <p>
-                    Log Out
-                  </p>
+                <a href="dashboard-mitra-daftar.html" class="nav-link ">
+                  <i class="far fa-copy nav-icon"></i>
+                  <p>Pendaftar</p>
                 </a>
               </li>
             </ul>
+            <li class="nav-item">
+              <a href="dashboard-mitra-daftar-aktif.html" class="nav-link active">
+                <i class="nav-icon fas fa-user"></i>
+                <p>
+                  Mahasiswa Magang
+                </p>
+              </a>
+            </li>
+          </li>
+          <li class="nav-item">
+            <a href="login-v2.html" class="nav-link">
+              <i class="nav-icon fas fa-power-off"></i>
+              <p>
+                Log Out
+              </p>
+            </a>
           </li>
         </ul>
       </nav>
@@ -88,7 +113,7 @@
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="profile-departemen.html">Home</a></li>
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
               <li class="breadcrumb-item active">User Profile</li>
             </ol>
           </div>
@@ -150,9 +175,8 @@
             </div>
           
             <div class="card col-md-9">
-             
               <div class="card-header border-transparent">
-                <h3 class="card-title">Detail Magang</h3>
+                <h3 class="card-title">Lamaran Diajukan</h3>
           
               </div>
               <!-- /.card-header -->
@@ -160,32 +184,21 @@
                 <div class="table-responsive">
                   <table class="table m-0">
                     <thead>
-                    <tr>
-                      <th>Nomor</th>
-                      <th>Lokasi</th>
-                      <th>Lowongan Diambil</th>
-                      <th>Status</th>
-                      <th>Waktu</th>
-                      <th>Dosen</th>
-                      <th>Tindakan</th>
+                    <tr class="row">
+                      <th class="col-2">Nomor</th>
+                      <th class="col-4">Melamar</th>
+                      <th class="col-4"> Asal</th>
+                      <th class="col-2">Status</th>
+                     
                     </tr>
                     </thead>
                     <tbody>
-                    <tr>
-                      <td><a href="#">1</a></td>
-                      <td>PT Techno Sejahtera</td>
-                      <td>Graphic Designer </td>
-                      <td><span class="badge badge-warning">Mengajukan</span></td>
-                      <td>15 Juni 2021- 15 Agustus 2021</td>
-                      <td>
-                          <select class="form-select" aria-label="Default select example">
-                            <option selected>Pilih dosen</option>
-                            <option value="1">Dinar Nugroho</option>
-                            <option value="2">Irkham Huda</option>
-                            <option value="3">Imam fahrurozi</option>
-                          </select>
-                        </td>
-                        <td> <button type="submit" class="btn btn-primary">Simpan</button></td>
+                    <tr class="row">
+                      <td class="col-2"><a href="#">1</a></td>
+                      <td class="col-4">Graphic Designer</td>
+                      <td class="col-4">Departemen Teknik Elektro Dan Informatika</td>
+                      <td class="col-2"><span class="badge badge-success">Magang</span></td>
+                     
                     </tr>
                    
                     </tbody>

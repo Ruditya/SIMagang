@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Dasboard Dosen Pembimbing</title>
+  <title>Dasboard Departemen</title>
   <link href="assets/img/sim-vertical-white.png" rel="icon">
 
   <!-- Google Font: Source Sans Pro -->
@@ -22,8 +22,8 @@
       <li class="nav-item">
         <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
       </li>
-     
-     
+      
+      
     </ul>
 
   
@@ -44,10 +44,10 @@
       <!-- Sidebar user panel (optional) -->
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">
         <div class="image">
-          <img src="assets/img/team/team-3.jpg" class="img-circle elevation-2" alt="User Image">
+          <img src="assets/img/logo-ugm.jpg" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
-          <a href="profile-dosbing.html" class="d-block">Dinar Nugroho</a>
+          <a href="profile-departemen.html" class="d-block">Departemen Teknik Eletro Dan Informatika</a>
         </div>
       </div>
 
@@ -60,7 +60,7 @@
            
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="dashboard-dosbing-daftar.html" class="nav-link">
+                <a href="dashboard-departemen-daftar .html" class="nav-link">
                   <i class="far fa-copy nav-icon"></i>
                   <p>Daftar Mahasiswa</p>
                 </a>
@@ -103,56 +103,72 @@
 
     <!-- Main content -->
     <section class="content">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-md-5   justify-content-center">
+      <div class="col-md-9">
+        <div class="card">
+          <div class="card-header p-2">
+            
+              <a class="nav-link" href="#settings" data-toggle="tab">Settings</a>
+           
+          </div><!-- /.card-header -->
+          <div class="card-body">
+            <div class="tab-content">
+              <div class="active tab-pane" id="activity">
+            
+                <!-- /.post -->
 
-            <!-- Profile Image -->
-            <div class="card card-primary card-outline">
-              <div class="card-body box-profile ">
-                <div class="text-center">
-                  <img class="profile-user-img img-fluid img-circle"
-                       src="assets/img/team/team-3.jpg"
-                       alt="User profile picture">
+              
+              <!-- /.tab-pane -->
+
+              <div class="tab-pane" id="settings">
+                <form class="form-horizontal">
+                  <div class="form-group row">
+                    <label for="inputName" class="col-sm-2 col-form-label">Name</label>
+                    <div class="col-sm-10">
+                      <input type="email" class="form-control" id="inputName" placeholder="Name">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
+                    <div class="col-sm-10">
+                      <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="inputName2" class="col-sm-2 col-form-label">Name</label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" id="inputName2" placeholder="Name">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="inputExperience" class="col-sm-2 col-form-label">Experience</label>
+                    <div class="col-sm-10">
+                      <textarea class="form-control" id="inputExperience" placeholder="Experience"></textarea>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="inputSkills" class="col-sm-2 col-form-label">Skills</label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" id="inputSkills" placeholder="Skills">
+                    </div>
+                  </div>           
+                </form>
+                <div class="form-group row">
+                  <div class="offset-sm-2 col-sm-10">
+                    <a href="profile-departemen.html">
+                      <button type="#" class="btn btn-danger">Save</button>
+                    </a> 
+                    </div>
                 </div>
-
-                <h3 class="profile-username text-center">Dinar Nugroho</h3>
-
-                <!-- <p class="text-muted text-center">Software Engineer</p> -->
-                <strong><i class="fas fa-id-card mr-1"></i> NIP</strong>
-
-                <p class="text-muted">
-                  01234657897
-                </p>
-
-                <hr>
-
-                <strong><i class="fas fa-envelope mr-1"></i> Email</strong>
-
-                <p class="text-muted">dinar.n@gmail.com</p>
-
-                <hr>
-                <strong><i class="fas fa-phone mr-1"></i> Email</strong>
-
-                <p class="text-muted">081234567890</p>
-               
               </div>
-              <div class="form-group row">
-                <div class="offset-sm-5 ">
-                <a href="profile-setting-dosbing.html">
-                  <button type="#" class="btn btn-danger">Setting</button>
-                </a> 
-                </div>
-              </div>
-              </div>
-              <!-- /.card-body -->
+              <!-- /.tab-pane -->
             </div>
-          
-          </div>
-          <!-- /.col -->
-        
-        <!-- /.row -->
-      </div><!-- /.container-fluid -->
+            <!-- /.tab-content -->
+          </div><!-- /.card-body -->
+        </div>
+        <!-- /.card -->
+      </div>
+      <!-- /.col -->
+    </div>
     </section>
     <!-- /.content -->
   </div>

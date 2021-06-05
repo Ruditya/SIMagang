@@ -66,18 +66,26 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="dashboard-mahasiswa-dosbing.html" class="nav-link active">
+                <a href="dashboard-mitra-lowongan.html" class="nav-link ">
                   <i class="far fa-copy nav-icon"></i>
                   <p>Lowongan</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="dashboard-mitra-daftar.html" class="nav-link">
+                <a href="dashboard-mitra-daftar.html" class="nav-link active">
                   <i class="far fa-copy nav-icon"></i>
                   <p>Pendaftar</p>
                 </a>
               </li>
             </ul>
+            <li class="nav-item">
+              <a href="dashboard-mitra-daftar-aktif.html" class="nav-link">
+                <i class="nav-icon fas fa-user"></i>
+                <p>
+                  Mahasiswa Magang
+                </p>
+              </a>
+            </li>
           </li>
           <li class="nav-item">
             <a href="login-v2.html" class="nav-link">
@@ -131,21 +139,21 @@
                 <h3 class="profile-username text-center">Bramantya Raka</h3>
 
                 <p class="text-muted text-center">Software Engineer</p>
-                <strong><i class="fas fa-book mr-1"></i> Education</strong>
+                <strong><i class="fas fa-book mr-1"></i> Pendidikan</strong>
 
                 <p class="text-muted">
-                  Diploma at gadjah Mada University
+                  Diploma 
                 </p>
 
                 <hr>
 
-                <strong><i class="fas fa-map-marker-alt mr-1"></i> Location</strong>
+                <strong><i class="fas fa-mail-bulk mr-1"></i> Email</strong>
 
-                <p class="text-muted">Malibu, California</p>
+                <p class="text-muted">Bramantya@mail.com</p>
 
                 <hr>
 
-                <strong><i class="fas fa-pencil-alt mr-1"></i> Skills</strong>
+                <strong><i class="fas fa-pencil-alt mr-1"></i> Kemampuan</strong>
 
                 <p class="text-muted">
                   <span class="tag tag-danger">UI Design</span>
@@ -157,18 +165,18 @@
 
                 <hr>
 
-                <strong><i class="far fa-file-alt mr-1"></i> Notes</strong>
+                <strong><i class="far fa-file-alt mr-1"></i> Pengalaman</strong>
 
                 <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fermentum enim neque.</p>
               </div>
-              
+             
               </div>
               <!-- /.card-body -->
             </div>
           
             <div class="card col-md-9">
               <div class="card-header border-transparent">
-                <h3 class="card-title">Proposal Diajukan</h3>
+                <h3 class="card-title">Lamaran Diajukan</h3>
           
               </div>
               <!-- /.card-header -->
@@ -176,20 +184,23 @@
                 <div class="table-responsive">
                   <table class="table m-0">
                     <thead>
-                    <tr>
-                      <th>Nomor</th>
-                      <th>Judul</th>
-                      <th>Status</th>
-                      <th>Tindakan</th>
+                    <tr class="row">
+                      <th class="col-2">Nomor</th>
+                      <th class="col-2">Melamar</th>
+                      <th class="col-3"> Asal</th>
+                      <th class="col-2">Status</th>
+                      <th class="col-3">Tindakan</th>
                     </tr>
                     </thead>
                     <tbody>
-                    <tr>
-                      <td><a href="#">1</a></td>
-                      <td>Proposal Magang PT Techno Sejahtera</td>
-                      <td><span class="badge badge-warning">Diajukan</span></td>
-                      <td>
-                       <button class="btn btn-file"><i class="fa fa-file-download"></i> Unduh</button> 
+                    <tr class="row">
+                      <td class="col-2"><a href="#">1</a></td>
+                      <td class="col-2">Graphic Designer</td>
+                      <td class="col-3">Departemen Teknik Elektro Dan Informatika</td>
+                      <td class="col-2"><span class="badge badge-warning">Diajukan</span></td>
+                      <td class="col-3 p-2">
+                       <button class="btn btn-primary"><i class="fa fa-check"></i> Terima</button> 
+                       <button class="btn btn-danger"><i class="fa fa-times"></i> Tolak</button> 
                       </td>
                     </tr>
                    
