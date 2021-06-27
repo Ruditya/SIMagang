@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Dashboard Mahasiswa</title>
+  <title>Dasboard Departeen</title>
   <link href="assets/img/sim-green-hat.png" rel="icon">
 
   <!-- Google Font: Source Sans Pro -->
@@ -37,11 +37,11 @@
   <!-- /.navbar -->
 
   <!-- Main Sidebar Container -->
-  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+  <aside class="main-sidebar sidebar-dark-primary elevation-1">
     <!-- Brand Logo -->
-    <a href="index.html" class="">
-      <img src="assets/img/sim-white.png" alt="" class="m-4" style="height: 75px;">
-      
+    <a href="profile.html" class="">
+      <img src="assets/img/sim-green.png" alt="" class="m-4 " style="height: 75px;">
+
     </a>
 
     <!-- Sidebar -->
@@ -49,10 +49,10 @@
       <!-- Sidebar user panel (optional) -->
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">
         <div class="image">
-          <img src="dist/img/user8-128x128.jpg" class="img-circle elevation-2 img-fluid" alt="User Image">
+          <img src="assets/img/logo-ugm.jpg" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
-          <a href="profile.html" class="d-block">Bramantya Raka</a>
+          <a href="profile-departemen.html" class="d-block">Departemen Teknologi Elektro Dan Informatika</a>
         </div>
       </div>
 
@@ -60,41 +60,31 @@
       <nav class="mt-2">
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           <!-- Add icons to the links using the .nav-icon class
-               with font-awesome or any other icon font library -->
-               <li class="nav-item">
-                <a href="index.html" class="nav-link">
-                  <i class="nav-icon fas fa-search"></i>
+             with font-awesome or any other icon font library -->
+          <li class="nav-item menu-open">
+
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="dashboard-departemen-daftar.html" class="nav-link active">
+                  <i class="far fa-copy nav-icon"></i>
+                  <p>Daftar Mahasiswa</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="dashboard-departemen-daftar-akun.html" class="nav-link">
+                  <i class="far fa-copy nav-icon"></i>
+                  <p>Kelola Akun</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="login-v2.html" class="nav-link">
+                  <i class="nav-icon fas fa-power-off"></i>
                   <p>
-                    Cari Lowongan
+                    Log Out
                   </p>
                 </a>
               </li>
-               <li class="nav-item menu-open">
-            
-              <li class="nav-item">
-                <a href="dashboard-mahasiswa-mitra.html" class="nav-link ">
-                  <i class="far fa-copy nav-icon"></i>
-                  <p>Lamaran diajukan</p>
-                </a>
-              </li>
-            
-          </li>
-          <li class="nav-item">
-            <a href="dashboard-mahasiswa-logbook.html" class="nav-link">
-              <i class="nav-icon fas fa-book-open"></i>
-              <p>
-                Log Book
-              
-              </p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="login-v2.html" class="nav-link">
-              <i class="nav-icon fas fa-power-off"></i>
-              <p>
-                Log Out
-              </p>
-            </a>
+            </ul>
           </li>
         </ul>
       </nav>
@@ -128,7 +118,7 @@
         <div class="card">
           <div class="card-header p-2">
             
-              <a class="nav-link" href="#settings" data-toggle="tab">Pengaturan</a>
+              <a class="nav-link" href="#settings" data-toggle="tab">Buat Akun</a>
            
           </div><!-- /.card-header -->
           <div class="card-body">
@@ -155,53 +145,30 @@
                     </div>
                   </div>
                   <div class="form-group row">
-                    <label for="inputEmail" class="col-sm-2 col-form-label">Telepon</label>
-                    <div class="col-sm-10">
-                      <input type="email" class="form-control" id="inputTelepon" placeholder="Telepon">
-                    </div>
-                  </div>
-                  <div class="form-group row">
-                    <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
+                    <label for="inputEmail" class="col-sm-2 col-form-label">Role</label>
                     <div class="col-sm-10">
                       <select class="form-control" >
                         <option selected>Pilih</option>
-                        <option value="1">Laki-laki</option>
-                        <option value="2">Perempuan</option>
-                        
+                        <option value="1">Mahasiswa</option>
+                        <option value="2">Dosen</option>
+                        <option value="2">Mitra</option>
+                        <option value="2">Supervisor</option>
+                        <option value="2">Departemen</option>
                       </select>
-                    </div>
-                  </div>
-                  <div class="form-group row">
-                    <label for="inputEmail" class="col-sm-2 col-form-label">Tanggal Lahir</label>
-                    <div class="col-sm-10">
-                      <div class="form-group">
-
-                          <div class="input-group date" id="reservationdate" data-target-input="nearest">
-                              <input type="text" class="form-control datetimepicker-input" data-target="#reservationdate"/>
-                              <div class="input-group-append" data-target="#reservationdate" data-toggle="datetimepicker">
-                                  <div class="input-group-text"><i class="fa fa-calendar"></i></div>
-                              </div>
-                          </div>
-                      </div>
                     </div>
                   </div>
                   
                   <div class="form-group row">
-                    <label for="inputSkills" class="col-sm-2 col-form-label">Kemampuan</label>
+                    <label for="inputSkills" class="col-sm-2 col-form-label">Password</label>
                     <div class="col-sm-10">
-                      <input type="text" class="form-control" id="inputSkills" placeholder="Kemampuan">
+                      <input type="text" class="form-control" id="inputSkills" placeholder="Password">
                     </div>
-                  </div> <div class="form-group row">
-                    <label for="inputExperience" class="col-sm-2 col-form-label">Pengalaman</label>
-                    <div class="col-sm-10">
-                      <textarea class="form-control" id="inputExperience" placeholder="Pengalaman"></textarea>
-                    </div>
-                  </div>          
+                  </div> 
                 </form>
                 <div class="form-group row">
                   <div class="offset-sm-2 col-sm-10">
-                    <a href="profile.html">
-                      <button type="#" class="btn btn-danger">Simpan</button>
+                    <a href="dashboard-departemen-daftar.html">
+                      <button type="#" class="btn btn-primary">Simpan</button>
                     </a> 
                     </div>
                 </div>
