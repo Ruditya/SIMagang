@@ -34,8 +34,8 @@
   <!-- Main Sidebar Container -->
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
-    <a href="index.html" class="">
-      <img src="assets/img/sim-horizontal-white.png" alt="" class="e " style="height: 75px;">
+    <a href="#" class="">
+      <img src="assets/img/sim-white.png" alt="" class="m-4 " style="height: 75px;">
       
     </a>
 
@@ -44,10 +44,10 @@
       <!-- Sidebar user panel (optional) -->
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">
         <div class="image">
-          <img src="assets/img/logo-ugm.jpg" class="img-circle elevation-2" alt="User Image">
+          <img src="assets/img/sim-green-hat.png" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
-          <a href="profile-departemen.html" class="d-block">Departemen Teknik Eletro Dan Informatika</a>
+          <a href="profile-mitra.html" class="d-block">	PT Techno Sejahtera</a>
         </div>
       </div>
 
@@ -57,23 +57,43 @@
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
           <li class="nav-item menu-open">
-           
+            <a href="#" class="nav-link ">
+              <i class="nav-icon fas fa-pen"></i>
+              <p>
+                Kelola Lowongan
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="dashboard-departemen-daftar .html" class="nav-link">
+                <a href="dashboard-mitra-lowongan.html" class="nav-link ">
                   <i class="far fa-copy nav-icon"></i>
-                  <p>Daftar Mahasiswa</p>
+                  <p>Lowongan</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="login-v2.html" class="nav-link">
-                  <i class="nav-icon fas fa-power-off"></i>
-                  <p>
-                    Log Out
-                  </p>
+                <a href="dashboard-mitra-daftar.html" class="nav-link ">
+                  <i class="far fa-copy nav-icon"></i>
+                  <p>Pendaftar</p>
                 </a>
               </li>
             </ul>
+          </li>
+          <li class="nav-item">
+            <a href="dashboard-mitra-daftar-aktif.html" class="nav-link">
+              <i class="nav-icon fas fa-user"></i>
+              <p>
+                Mahasiswa Magang
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="login-v2.html" class="nav-link">
+              <i class="nav-icon fas fa-power-off"></i>
+              <p>
+                Log Out
+              </p>
+            </a>
           </li>
         </ul>
       </nav>
@@ -81,6 +101,7 @@
     </div>
     <!-- /.sidebar -->
   </aside>
+
 
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
@@ -105,10 +126,8 @@
     <section class="content">
       <div class="col-md-9">
         <div class="card">
-          <div class="card-header p-2">
-            
-              <a class="nav-link" href="#settings" data-toggle="tab">Settings</a>
-           
+          <div class="card-header m-1">
+           <h5>Settings</h5>
           </div><!-- /.card-header -->
           <div class="card-body">
             <div class="tab-content">
@@ -128,34 +147,28 @@
                     </div>
                   </div>
                   <div class="form-group row">
-                    <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
+                    <label for="inputExperience" class="col-sm-2 col-form-label">Alamat</label>
                     <div class="col-sm-10">
-                      <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                      <textarea class="form-control" id="inputExperience" placeholder="Alamat"></textarea>
                     </div>
                   </div>
                   <div class="form-group row">
-                    <label for="inputName2" class="col-sm-2 col-form-label">Name</label>
+                     <label for="inputName2" class="col-sm-2 col-form-label">Fax</label>
+                     <div class="col-sm-10">
+                       <input type="text" class="form-control" id="inputName2" placeholder="Fax">
+                     </div>
+                   </div>
+                    <div class="form-group row">
+                    <label for="inputSkills" class="col-sm-2 col-form-label">Telepon</label>
                     <div class="col-sm-10">
-                      <input type="text" class="form-control" id="inputName2" placeholder="Name">
-                    </div>
-                  </div>
-                  <div class="form-group row">
-                    <label for="inputExperience" class="col-sm-2 col-form-label">Experience</label>
-                    <div class="col-sm-10">
-                      <textarea class="form-control" id="inputExperience" placeholder="Experience"></textarea>
-                    </div>
-                  </div>
-                  <div class="form-group row">
-                    <label for="inputSkills" class="col-sm-2 col-form-label">Skills</label>
-                    <div class="col-sm-10">
-                      <input type="text" class="form-control" id="inputSkills" placeholder="Skills">
+                      <input type="text" class="form-control" id="inputSkills" placeholder="Telepon">
                     </div>
                   </div>           
                 </form>
                 <div class="form-group row">
                   <div class="offset-sm-2 col-sm-10">
-                    <a href="profile-departemen.html">
-                      <button type="#" class="btn btn-danger">Save</button>
+                    <a href="profile-mitra.html">
+                      <button type="submit" class="btn btn-danger">Save</button>
                     </a> 
                     </div>
                 </div>
